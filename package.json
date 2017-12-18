@@ -2,10 +2,10 @@
     "name": "vscode-clangd",
     "displayName": "vscode-clangd",
     "description": "Clang Language Server",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "llvm-vs-code-extensions",
     "engines": {
-        "vscode": "^1.8.0"
+        "vscode": "^1.15.0"
     },
     "categories": [
         "Languages",
@@ -24,8 +24,8 @@
         "test": "node ./node_modules/vscode/bin/test"
     },
     "dependencies": {
-        "vscode-languageclient": "^2.6.3",
-        "vscode-languageserver": "^2.6.2"
+        "vscode-languageclient": "^3.3.0",
+        "vscode-languageserver": "^3.3.0"
     },
     "devDependencies": {
         "typescript": "^2.0.3",
@@ -51,6 +51,11 @@
                         "type": "string"
                     },
                     "description": "Arguments for clangd server"
+                },
+                "clangd.syncFileEvents": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Whether or not to send file events to clangd (File created, changed or deleted). This can be disabled for performance consideration."
                 }
             }
         }
