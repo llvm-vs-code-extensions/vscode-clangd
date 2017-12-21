@@ -1,4 +1,4 @@
-# README
+# :no_entry: [DEPRECATED] The extension is maintained in LLVM [clang-tools-extra](http://llvm.org/svn/llvm-project/clang-tools-extra/trunk/clangd/clients/clangd-vscode/)
 
 [clangd](https://clang.llvm.org/extra/clangd.html) is a [Language Server](https://github.com/Microsoft/language-server-protocol) leveraging clang.
 
